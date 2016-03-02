@@ -36,6 +36,17 @@
   <context:component-scan base-package="com.itibo"/>
 ```
 
+###Add listener to web.xml:
+[web.xml](https://github.com/UnionOne/JSFSpring/blob/master/src/main/webapp/WEB-INF/web.xml#L10-L15)
+```xml
+    <listener>
+        <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+    </listener>
+    <listener>
+        <listener-class>org.springframework.web.context.request.RequestContextListener</listener-class>
+    </listener>
+```
+
 ###Spring annotation:
 [UserBo.java](https://github.com/UnionOne/JSFSpring/blob/master/src/main/java/com/itibo/spring/bean/bo/impl/UserBoImpl.java#L10)
 ```java
